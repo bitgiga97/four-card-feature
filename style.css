@@ -188,6 +188,9 @@ header {
 /* Responsive design for desktop version */
 
 @media screen and (min-width:1440px) {
+    body {
+        overflow-x: hidden;
+    }
     /* GRID */
     .container {
         width: 111rem;
