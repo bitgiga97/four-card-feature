@@ -183,3 +183,81 @@ header {
     border-top-right-radius: 0.8rem;
     border-top-left-radius: 0.8rem;
 }
+
+
+/* Responsive design for desktop version */
+
+@media screen and (min-width:1440px) {
+    /* GRID */
+    .container {
+        width: 111rem;
+        height: 53rem;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: 25% 50% 25%;
+        gap: 3rem;
+    }
+    .card-1 {
+        grid-column: 1/1;
+        grid-row-start: 2;
+    }
+    .card-2 {
+        grid-column: 2/2;
+    }
+    .card-3 {
+        grid-column: 2/2;
+        grid-row: 2/2;
+        margin-top: 9rem;
+    }
+    .card-4 {
+        grid-column: 3/3;
+        grid-row: 2/2;
+    }
+    .hat-1,
+    .hat-2,
+    .hat-3,
+    .hat-4 {
+        width: 35rem;
+        height: 0.4rem;
+    }
+    /* Positioning */
+    header {
+        width: 54rem;
+        height: 16.8rem;
+        padding: 8rem 45rem 6.4rem 45rem;
+        margin: 0 auto;
+    }
+    header>h1 {
+        font-size: 3.6rem;
+        line-height: 5.4rem;
+        text-align: center;
+        letter-spacing: 0.25px;
+    }
+    header>h1>span {
+        font-size: 3.6rem;
+        line-height: 5.4rem;
+        letter-spacing: 0.25px;
+    }
+    .logo-1,
+    .logo-2,
+    .logo-3,
+    .logo-4 {
+        width: 6.4rem;
+        height: 6.4rem;
+        top: 13.4rem;
+        left: 26.4rem;
+    }
+    .card-1>h2,
+    .card-2>h2,
+    .card-3>h2,
+    .card-4>h2 {
+        padding-top: 3.2rem;
+        padding-left: 3.2rem;
+    }
+    .card-1>p,
+    .card-2>p,
+    .card-3>p,
+    .card-4>p {
+        padding: 0.6rem 3.2rem 0 3.2rem;
+    }
+}
